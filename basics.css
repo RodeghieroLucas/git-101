@@ -1,0 +1,97 @@
+/* h1 {
+    text-align: center;
+    font-weight: 400;
+    text-decoration: #ff0099 underline overline wavy;
+    letter-spacing: 10px;
+    font-size: 55px;
+    font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+p {
+    text-align: right;
+    line-height: 1.5;
+}
+p:nth-of-type(2) {
+    letter-spacing: 5px;
+}
+CHANGES THE WHOLE LOT
+* {
+    background-color: gainsboro; 
+}
+*/
+
+body {
+    background-color: #00004f;
+    color: lavenderblush;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1,h2 {
+    color: #0088ff;
+}
+/* ID */
+#signup {
+    background-color: #1d3556;
+    color: honeydew;
+}
+span {
+    color: rgb(0, 200, 100);
+}
+/* CLASS */
+.tag {
+    background-color: #ff1144;
+    color: wheat;
+    font-size: 25px;
+}
+.post a {
+    color: rgb(0, 200, 100);
+    font-weight: 700;
+    text-decoration: none;
+}
+footer a {
+    color: red;
+}
+/* EVERY BUTTON THAT COMES STRAIGHT AFTER AN H2 WILL BE CHANGED */
+h2 + button {
+    font-size: 20px;
+}
+/* DIRECT DESCENDANT OF THE FOOTER */
+footer > a {
+    color: #fa9;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+/* section[class="post"] {
+    background-color: grey;
+} */
+
+.post button:hover {
+    background-color: #ff1144;
+    color: aliceblue;
+}
+.post a:hover {
+    text-decoration: overline;
+}
+.post button:active {
+    background-color: pink;
+}
+
+.post:nth-of-type(2n){
+    background-color: #dfe8dc;
+}
+/* PSEUDO ELEMENTS */
+p::first-letter{
+    font-size: 50px;
+}
+body > p::first-line{
+    color: red;
+}
+body > p::selection{
+    background-color: blueviolet;
+}
